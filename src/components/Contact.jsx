@@ -46,11 +46,11 @@ export default function Contact() {
         return () => observer.disconnect();
     }, []);
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // For now just prevent default — wire up a backend or form service later
-        alert('Thanks for reaching out! This form is not yet connected to a backend.');
-    };
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     // For now just prevent default — wire up a backend or form service later
+    //     alert('Thanks for reaching out! This form is not yet connected to a backend.');
+    // };
 
     return (
         <section className="contact" id="contact" ref={sectionRef}>

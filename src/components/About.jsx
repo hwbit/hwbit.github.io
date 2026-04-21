@@ -46,7 +46,7 @@ export default function About() {
                             efficient, and user-friendly applications that benefit the user.
                         </p>
                         <p>
-                            Graduated from the University of Manitoba with a Bachelor of Science (Co-op)in Computer Science with a 4.25 GPA.
+                            Graduated from the University of Manitoba with a Bachelor of Science (Co-op) in Computer Science with a 4.25 GPA.
                         </p>
                         <p>
                             I am currently learning how to do game development using the Godot engine and GDScript.
