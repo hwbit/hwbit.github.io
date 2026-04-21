@@ -46,11 +46,6 @@ export default function Contact() {
         return () => observer.disconnect();
     }, []);
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     // For now just prevent default — wire up a backend or form service later
-    //     alert('Thanks for reaching out! This form is not yet connected to a backend.');
-    // };
 
     return (
         <section className="contact" id="contact" ref={sectionRef}>
@@ -74,53 +69,6 @@ export default function Contact() {
                             </div>
                         ))}
                     </div>
-
-                    {/* <div className="glass-card contact-form-wrapper animate-on-scroll">
-                        <form className="contact-form" onSubmit={handleSubmit}>
-                            <div className="form-row">
-                                <div className="form-group">
-                                    <label htmlFor="contact-name">Name</label>
-                                    <input
-                                        type="text"
-                                        id="contact-name"
-                                        placeholder="Your name"
-                                        required
-                                    />
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="contact-email">Email</label>
-                                    <input
-                                        type="email"
-                                        id="contact-email"
-                                        placeholder="you@example.com"
-                                        required
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="form-group">
-                                <label htmlFor="contact-subject">Subject</label>
-                                <input
-                                    type="text"
-                                    id="contact-subject"
-                                    placeholder="What's this about?"
-                                />
-                            </div>
-
-                            <div className="form-group">
-                                <label htmlFor="contact-message">Message</label>
-                                <textarea
-                                    id="contact-message"
-                                    placeholder="Tell me about your project..."
-                                    required
-                                ></textarea>
-                            </div>
-
-                            <button type="submit" className="btn-submit">
-                                Send Message →
-                            </button>
-                        </form>
-                    </div> */}
                 </div>
             </div>
         </section>
