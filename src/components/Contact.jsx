@@ -57,26 +57,25 @@ export default function Contact() {
             <div className="container">
                 <div className="contact-grid">
                     <div className="contact-info animate-on-scroll">
-                        <h2>Let's Work Together</h2>
+                        <h2>Contact Me</h2>
                         <p>
-                            Have a project in mind or just want to chat? Feel free to reach
-                            out. I'm always open to discussing new opportunities and ideas.
+                            Feel free to reach out. I'm always open to discussing new opportunities and ideas.
                         </p>
-
-                        <div className="contact-methods">
-                            {contactMethods.map(({ icon, title, value }) => (
-                                <div className="contact-method" key={title}>
-                                    <div className="contact-method-icon">{icon}</div>
-                                    <div className="contact-method-text">
-                                        <h4>{title}</h4>
-                                        <p>{value}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
                     </div>
 
-                    <div className="glass-card contact-form-wrapper animate-on-scroll">
+                    <div className="contact-methods animate-on-scroll">
+                        {contactMethods.map(({ icon, title, value }) => (
+                            <div className="contact-method" key={title}>
+                                <div className="contact-method-icon">{icon}</div>
+                                <div className="contact-method-text">
+                                    <h4>{title}</h4>
+                                    <p>{value}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* <div className="glass-card contact-form-wrapper animate-on-scroll">
                         <form className="contact-form" onSubmit={handleSubmit}>
                             <div className="form-row">
                                 <div className="form-group">
@@ -121,7 +120,7 @@ export default function Contact() {
                                 Send Message →
                             </button>
                         </form>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
