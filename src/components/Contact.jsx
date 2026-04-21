@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import './Contact.css';
+import { EMAIL, LINKEDIN, GITHUB } from './Constants';
 
 const LinkedInIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -21,9 +22,9 @@ const MailIcon = () => (
 );
 
 const contactMethods = [
-    { icon: <MailIcon />, title: 'Email', value: 'cscihwong@gmail.com' },
-    { icon: <LinkedInIcon />, title: 'LinkedIn', value: 'linkedin.com/in/v3-henry-wong/' },
-    { icon: <GitHubIcon />, title: 'GitHub', value: 'github.com/hwbit' },
+    { icon: <MailIcon />, title: 'Email', value: EMAIL },
+    { icon: <LinkedInIcon />, title: 'LinkedIn', value: LINKEDIN },
+    { icon: <GitHubIcon />, title: 'GitHub', value: GITHUB },
 ];
 
 export default function Contact() {

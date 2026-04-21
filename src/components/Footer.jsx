@@ -1,4 +1,5 @@
 import './Footer.css';
+import { EMAIL, LINKEDIN, GITHUB } from './Constants';
 
 const LinkedInIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -20,9 +21,9 @@ const MailIcon = () => (
 );
 
 const socials = [
-    { icon: <GitHubIcon />, label: 'GitHub', href: 'https://github.com/hwbit' },
-    { icon: <LinkedInIcon />, label: 'LinkedIn', href: 'https://www.linkedin.com/in/v3-henry-wong/' },
-    { icon: <MailIcon />, label: 'Email', href: 'mailto:hello@yourname.dev' },
+    { icon: <GitHubIcon />, label: 'GitHub', href: GITHUB },
+    { icon: <LinkedInIcon />, label: 'LinkedIn', href: LINKEDIN },
+    { icon: <MailIcon />, label: 'Email', href: `mailto:${EMAIL}` },
 ];
 
 export default function Footer() {
