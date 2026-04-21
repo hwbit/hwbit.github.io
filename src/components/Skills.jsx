@@ -6,7 +6,7 @@ const categories = [
         title: 'Languages',
         icon: '💻',
         tools: [
-            'TypeScript', 'JavaScript', 'Python', 'Java', 'C#', 'HTML', 'CSS', 'GDScript',
+            'Python', 'Java', 'JavaScript', 'TypeScript', 'PHP', 'C', 'C++', 'C#', 'HTML', 'CSS', 'GDScript',
         ],
     },
     {
@@ -20,21 +20,21 @@ const categories = [
         title: 'Backend',
         icon: '⚙️',
         tools: [
-            'Node.js', 'Express.js', 'FastAPI',
+            'Node.js', 'Express.js', 'FastAPI', 'Azure Function App'
         ],
     },
     {
         title: 'Databases',
         icon: '🗄️',
         tools: [
-            'PostgreSQL', 'MongoDB', 'MS SQL',
+            'MySQL', 'PostgreSQL', 'MS SQL', 'SQLite', 'MongoDB', 'NoSQL', 'CosmosDB'
         ],
     },
     {
         title: 'Tools & Other',
         icon: '🛠️',
         tools: [
-            'Git', 'Alembic', 'Monogame', 'Godot',
+            'Git', 'Alembic', 'Monogame', 'Godot', 'Azure,', 'Docker', 'Splunk', 'Jira', 'Postman', 'Figma',
         ],
     },
 ];
@@ -66,9 +66,9 @@ export default function Skills() {
         <section className="skills" id="skills" ref={sectionRef}>
             <div className="container">
                 <h2 className="section-title animate-on-scroll">Skills & Tech Stack</h2>
-                <p className="section-subtitle animate-on-scroll">
+                {/* <p className="section-subtitle animate-on-scroll">
                     Technologies and tools I use to bring ideas to life.
-                </p>
+                </p> */}
 
                 <div className="skills-categories">
                     {categories.map((cat) => (
