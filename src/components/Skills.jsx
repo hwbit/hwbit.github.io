@@ -34,7 +34,7 @@ const categories = [
         title: 'Tools & Other',
         icon: '🛠️',
         tools: [
-            'Git', 'Alembic', 'Monogame', 'Godot', 'Azure,', 'Docker', 'Splunk', 'Jira', 'Postman', 'Figma',
+            'Git', 'Alembic', 'Monogame', 'Godot', 'Azure', 'Docker', 'Splunk', 'Jira', 'Postman', 'Figma',
         ],
     },
 ];
